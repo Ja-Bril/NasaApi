@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+  line-height: 1.7;
+  font-size: 19px;
+  background-image: url('https://cdn.mos.cms.futurecdn.net/HuGGeENt6kGyixe3hT9tnY-970-80.jpg.webp');
+  min-width: 1100px;
+}
+
+.navbar{
+  display:flex;
+  justify-content: center;
+}
+
+.nasa-photo {
+  display: flex;
+  position:absolute;
+  padding: 40px;
+  margin: 0 auto;
+  max-height: 100%;
+}
+
+.nasa-photo img {
+  width: 50%;
+  object-fit: contain;
+  max-height: 80vh;
+}
+
+.nasa-photo h1 {
+  color: white;
+}
+
+.nasa-photo .date {
+  margin-top: 0;
+}
+
+.nasa-photo .explanation {
+  color: #bbb;
+  padding-left: 10px;
+}
+
+.nasa-photo .title {
+  color: white;
+}
+.nasa-photo .copyright {
+  color: white;
+}
+.nasa-photo .date {
+  color: white;
+}
+
+@media (max-width: 1280px) {
+  .nasa-photo {
+    display: block;
+  }
+
+  .nasa-photo img {
+    width: 100%;
+    min-width: 1100px;
+  }
+}
+
+.home {
+  position:absolute;
+  align-items: center;
+  margin: 0px;
+  overflow: visible;
+  min-width: 1100px;
+  padding: 30px;
+  margin-top: 200px;
+  margin-left: 640px
+
+}
+.search{
+  position: absolute;
+  align-items: center;
+  margin: 0px;
+  min-width: 1500px;
+  overflow: visible;
+  padding: 30px;
+  margin-top: 500px;
+  margin-left: 340px
+}
+
+.home-link {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 550;
+  font-size: 40px;
+  background: #0032A0;
+  padding: 20px 20px;
+  color: #ffffff;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  text-transform: uppercase;
+  border: solid 2px;
+  border-color: #fc3d21;
+  width: 445px;
+}
+.home-link:hover{
+  font-size: 55px;
+  width: 625px;
+}
+.home-link:before{
+  transition: 0.5s all ease;
+  position:fixed;
+  top:0;
+  left: 50%;
+  right:50%;
+  bottom: 0;
+  opacity:0;
+  content:"";
+  background: #000000;
+}
+.home-link:hover:before{
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index:-1;
+}
+
+.home-search {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 550;
+  font-size: 40px;
+  background: #0032A0;
+  padding: 20px;
+  color: #ffffff;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  text-transform: uppercase;
+  border: solid 2px;
+  border-color: #fc3d21;
+  width: 800px;
+  text-align: center; 
+}
+.home-search:hover{
+  font-size: 50px;
+  width: 950px;
+}
+.home-search:before{
+  transition: 0.5s all ease;
+  position:fixed;
+  top:0;
+  left: 50%;
+  right:50%;
+  bottom: 0;
+  opacity:0;
+  content:"";
+  background: #000000;
+}
+.home-search:hover:before{
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index:-1;
+}
